@@ -9,7 +9,8 @@
 /bin/
 /config/
 /crash-reports/
-/libs/
+/libs/liteloader-1.7.10.jar
+/libs/voxellib_2.3.1_mc1.7.10.jar
 /logs/
 options.txt
 /saves/
