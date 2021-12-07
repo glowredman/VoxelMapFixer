@@ -6,8 +6,8 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 
-@Mixin(targets = "com.thevoxelbox.voxelmap.c.h", remap = false)
-public class hMixins {
+@Mixin(targets = "com.thevoxelbox.voxelmap.c.h")
+public class hMixin {
 	
 	
 	@Redirect(

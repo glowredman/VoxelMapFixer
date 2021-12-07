@@ -4,17 +4,19 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.spongepowered.asm.lib.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
-import cpw.mods.fml.common.FMLLog;
-
 public class Main implements IMixinConfigPlugin {
+	
+	public static final Logger LOGGER = LogManager.getFormatterLogger("VoxelMapFixer");
 
 	@Override
 	public void onLoad(String mixinPackage) {
-		FMLLog.info("VoxelMapFixer GRADLETOKEN_VERSION loaded.");
+		LOGGER.info("VoxelMapFixer GRADLETOKEN_VERSION loaded.");
 	}
 
 	@Override
@@ -32,7 +34,9 @@ public class Main implements IMixinConfigPlugin {
 
 	@Override
 	public List<String> getMixins() {
-		return Arrays.asList("MapMixin", "c.hMixins");
+		return Arrays.asList(
+				"MapMixin",
+				"c.hMixin");
 	}
 
 	@Override
