@@ -1,5 +1,4 @@
-// Add your dependencies here
-
 dependencies {
-
+    compile "com.mumfrey:liteloader:1.7.10_04:mcpnames"
+    compile(deobf("https://media.forgecdn.net/files/2462/146/mod_voxelMap_1.7.0b_for_1.7.10.litemod"))
 }

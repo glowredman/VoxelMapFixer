@@ -34,9 +34,7 @@ public class Main implements IMixinConfigPlugin {
 
 	@Override
 	public List<String> getMixins() {
-		return Arrays.asList(
-				"MapMixin",
-				"c.hMixin");
+		return Arrays.asList("MapMixin", "c.hMixin");
 	}
 
 	@Override
